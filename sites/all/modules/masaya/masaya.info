@@ -1,0 +1,9 @@
+name = Masaya
+description = Does some custom programmed tasks for Masaya Blog.
+package = Masaya
+core = 7.x
+files[] = masaya.module
+configure = admin/config/masaya
+
+;dependencies[] = autoload
+;php = 5.2

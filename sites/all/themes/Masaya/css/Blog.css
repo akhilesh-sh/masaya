@@ -1,0 +1,1124 @@
+
+@import url(http://fonts.googleapis.com/css?family=Lora:700);
+.page-comment-reply form#comment-form {
+display: block;
+}
+
+ul.contant_cities_foo li.collapsed {
+  list-style-image: none;
+  list-style-type: none;
+}
+.node-type-city-guide .y_inner-topul li:nth-last-child(3) h3 a {
+    color: hsl(0, 0%, 0%) !important;
+}
+.glyphicon{ position: absolute !important; top: 160px !important;}
+.left_slide, .right_slide{
+    background: none !important;
+    border: none !important;
+}
+.bg_color{
+    background-color: #fff;
+    float: none !important;
+    clear: both;
+    display: flex;
+    margin: 0 auto;
+}
+.midle_content{
+    float: none !important;
+    margin: 0 auto;
+}
+.node-type-vos-voyages .midle_content p img{
+    width: 100%;
+    height: 100%;
+}
+span.coluns1 {
+    color: #FBC200;
+    font-size: 120px;
+    position: absolute;
+    top: 0px;
+    left: -40px;
+    font-family: 'Lora', serif;
+}
+span.coluns2 {
+    color: #FBC200;
+    font-size: 90px;
+    position: relative;
+    right: 0;
+    top: 0px;
+    font-family: 'Lora', serif;
+    float: right;
+}
+.node-type-vos-voyages .midle_content p {
+    float: left;
+    width: 100%;
+}
+.Voyage_shadow img {
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+}
+.top_tastimonial p{
+position: relative;
+    top: 55px;
+    font-size: 16px;
+    font-style: italic;
+}
+.Voyage img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    float: left;
+    margin: 30px 10px;
+}
+.Voyage_top_name {
+    margin-top: 53px;
+    float: left;
+}
+.midle_content h2 {
+    font-size: 30px;
+    text-align: center;
+    color: #FBC200;
+    font-size: 38px;
+    font-family: 'Duffy-DemiBold';
+    line-height: 40px;
+    float: left;
+    width: 100%;
+    margin-top: 30px;
+}
+.Midle_slider img{width:100%; height: 300px !important;}
+.carousel-control.right,.carousel-control.left{z-index: 9 !important}
+.fixed_social_icons span {
+    color: #9c9c9c;
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    top: 0;
+    display: block;
+    text-align: center;
+    width: 98%;
+}
+.active_child_nav {
+    background-color: #fff;
+    color: #FFBE00 !important;
+}
+#Section_2_panel h5 {
+    font-family: serif !important;
+    font-size: 17px !important;
+}
+.ParentDiv {
+    width: 102%;
+}
+.Section_panel_midle_div.panel_left_contant.section_contant2 > h4 {
+    float: left;
+    text-align: left;
+    width: 100%;}
+.node-type-your-stay .Section_1,.node-type-your-stay .Section_2,.node-type-your-stay .Section_3,.node-type-your-stay .Section_4{  background-size: 100% 100%; background-attachment: fixed;}
+.img img{width: 100% !important; height: 100% !important;}
+a{text-decoration: none !important;}
+a:hover{text-decoration: none !important;}
+.btn.btn-yellow { border: none !important; color: #fff !important;}
+.form-group .btn.btn-default {
+    background: #2B180A none repeat scroll 0 0 !important;
+    border: medium none !important;
+    color: #FFF !important;
+    font-family: ProximaNova-Bold !important;
+    font-size: 14px !important;
+    padding: 10px 15px !important;
+    text-transform: uppercase !important;
+}
+.language_flag{float: right; right: 4px; top: 4px; position: static !important;}
+.language_flag ul {
+    top: 20px !important;
+    width: 56px !important;
+}
+.btn.btn-yellow:hover{ background-color: #2b180a !important; color: #fff !important;}
+.reserver_con{color: #FFF;
+display: inline-block;
+font-family: Duffy-DemiBold;}
+.dropdown.language_flag > button { background: rgba(0, 0, 0, 0) none repeat scroll 0 0; border: medium none;}
+.dropdown.language_flag li a{padding: 0 20px !important;}
+
+
+.blog-faq_section {display: inline-block;margin: 70px 0 0;width: 100%;}
+.blog_container {margin: auto;max-width:750px;width:100%;}
+.blog_container h4 {color: #fbc200;display: inline-block;font-family: "Duffy-DemiBold";font-size: 36px;line-height: 36px;width: 100%;margin-bottom: 0;}
+.blog_faq_section {display: inline-block;margin-top: 15px;width: 100%;}
+.blog_faq_section h6 {color: #2b180b;display: inline-block;font-family: "ProximaNova-Bold";font-size: 14px;text-transform: uppercase;width: 100%;margin-bottom: 5px;}
+.blog_faq_section p {color: #2b180b;display: inline-block;width: 100%;}
+.blog_faq_section h5 {display: inline-block;font-family: "ProximaNova-Bold";margin: 5px 0;width: 100%;}
+.blog_faq_section ul {display: inline-block;margin-bottom: 15px;padding: 0;width: 100%;}
+.blog_faq_section ul li {display: inline-block;padding-left:10px;width: 100%;background-image:url("../images/listing_aroow.png"); background-repeat:no-repeat; background-position:left center;}
+ul.Blogfaq_list li {background-image: none;padding: 0;}
+ul.Blogfaq_list li strong {font-family: "ProximaNova-Bold";font-weight: normal;}
+.faq_main {display: inline-block;margin: 50px 0;width: 100%;}
+.accordion-section-content {display:none;}
+.blog_accordion_con {display: inline-block;margin-top: 20px;width: 100%;}
+.accordion-section {border-bottom: 1px solid #e7e7e7;display: inline-block;padding:15px 0;width: 100%;}
+.accordion-section-title {color: #2b180b;display: inline-block;font-family: "ProximaNova-Bold";padding:4px 17px 4px 0;text-transform: uppercase;width: 100%; background-image:url("../images/exe_drop_arrow.png"); background-repeat:no-repeat; background-position:right center;}
+.accordion-section-title:hover , .accordion-section-title:focus{color: #2b180b;}
+.accordion-section-title.active{background-image:url("../images/exe_drop_arrow_top.png");}
+.accordion-section:last-child {border-bottom:none;}
+.blog_top-yellow ul {margin-bottom: 0;padding-bottom: 16px; padding-top: 10px;}
+.blog_top-yellow {padding-bottom: 0;}
+.bdr-blog{ background-image:url("../images/trip_strip_bdr.png"); background-repeat:no-repeat; background-position:center bottom; padding-bottom:5px;}
+.blog_tips_wrapper {display: inline-block;width: 100%; background-image:url("../images/bg_repeat.png"); background-repeat:repeat;}
+.node-type-city-guide{display: inline-block !important; width: 100% !important; background-image:url("../images/bg_repeat.png") !important; background-repeat:repeat !important;}
+.blog_listing_main {float:left; position: relative;width: 100%;}
+.blog_list_img {height: 440px;}
+.blog_list_overlay_con {display: inline-table;height: 440px;left: 0;position: absolute;top: 0;width: 100%;}
+.blog_list_inner {display: table-cell;height: 100%;vertical-align: middle;width: 100%;}
+.blog_list_inner .h1_seo_trip {color: #fff;font-family: ProximaNova-Bold;font-size: 24px;margin: 0;text-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);   text-transform: uppercase;}
+.blog_list_inner .h2_seo_trip {background:#fff;color: #2b180b;display: inline-block;font-family: ProximaNova-Bold;font-size: 14px;margin: 5px 0 0;
+padding: 5px 15px;text-transform: uppercase;}
+.your_travel_con {display: inline-block;margin: 15px 0;width: 100%;}
+.your_travel_con .blog_list_space img{ height: 250px;}
+.nav-item.current > a {color: #fbc200 !important;}
+.nav-item.current > a span{color: #fbc200 !important;}
+
+.blog-tips_title {font-family: "Duffy-DemiBold";font-size: 42px;line-height: 42px;margin-bottom: 20px;}
+.travel_listing-inner {box-shadow: 0 3px 6px #a1a1a1;}
+.travel_listing-inner h6 {font-family: "ProximaNova-Bold";font-size: 18px;margin: 0 auto;padding: 10px;width:230px;text-align: center;}
+.travel_container1 img {border: 4px solid #fff;box-shadow:0 4px 5px #a1a1a1;left: 30%;position: absolute;top: -22px;width: 100px; height: 100px !important;}
+.travel_listing-inner p {display: inline-block;margin: 0;text-align: left;width: 100%;font-size: 13px;}
+.blog-tips_content {margin: 5px 0;}
+.travel_listing-inner p strong {font-family: "ProximaNova-Bold";font-weight: normal;}
+.blog_list_space {padding: 0;width: 30% !important;}
+.blog_list_space a:hover{text-decoration: none !important;}
+.space-15 {margin: 0 5%;}
+.blog_instagram_wrapper {display: inline-block;margin: 40px 0;width: 100%;}
+.blog_list_inner h3 {margin: 0;}
+.blog_activity_wrapper h2 {font-family: "Duffy-DemiBold";font-size: 42px;line-height: 42px;}
+.blog_activity_wrapper h4 {display:inline-block;font-family:"ProximaNova-Bold";font-size:18px;margin:0 0 15px;text-transform:uppercase;width:100%;}
+.blog_activity_wrapper {display: inline-block;margin-bottom: 40px;width: 100%;}
+.blog_list-inner img {display: inline-block;width: 100%; height: 165px;}
+.blog_list-inner {display: inline-block;padding-bottom: 10px;width: 100%; background-image:url("../images/blog_list_shadow.png"); background-repeat:no-repeat; background-position:center bottom;}
+.blog_list_content_in {display: inline-block;padding: 10px;width: 100%;}
+.blog_list_content_in h6 {font-family: "ProximaNova-Bold";font-size: 14px;margin-top: 15px;}
+.blog_list_content_in .btn-yellow {color: #fff;display: inline-block;font-family: "ProximaNova-Bold";text-transform: uppercase;width: 100%;}
+.blog_act_list2 {display: inline-block;margin-top: 7px;width: 100%;}
+.space-bottom-50{ margin-bottom:50px;}
+.blogvp-instacon1 h5 {margin: 5px 0;}
+.blogvp-instacon1 img {margin: 5px 0;}
+.blogvp-instacon1 {padding: 20px 0; height: 220px;}
+.blog_hostel_ho-con {display: inline-block;margin: 50px 0;width: 100%;}
+.blog_hostel-ins {margin-top: 20px;}
+ul.contant_cities_foo li {float: left;margin: 0;padding: 0;text-align: center;width: 33.33%;}
+ul.contant_cities_foo {list-style: outside none none;margin: 0;padding: 0;width: 100%;}
+#menu{display: none;}
+.pull-left.left_exp > a {color: #000 !important;}
+.col-md-3.col-sm-3.space1cell { background: #fff none repeat scroll 0 0; padding: 0 15px;}
+.node-type-your-stay .region.region-content { margin-top: -20px !important;}
+.node_insta .imgfull-width { height: 110px; }
+.Section_light_img {box-shadow: 0 0 5px #ccc; padding: 20px;}
+.blog_hostel-ins .blogvp-instacon1 {
+    background: #fff none repeat scroll 0 0;
+   height: 220px;
+    padding: 0;
+}
+.node-type-your-stay .Section_light_img {
+ padding: 8px 20px;
+ margin-bottom: 20px;
+}
+.node-type-your-stay .y_inner-topul li:first-child a, .node-type-photo-album .y_inner-topul li:last-child a {
+color: black;
+}
+.ParentDiv ul li {
+    color: #6c6c6c !important;
+}
+.ParentDiv li {
+    color: #6c6c6c !important;
+}
+.Section_panel_midle_div p {color: #555555;}
+#Section_1_panel a {color: #000 !important;text-decoration: underline !important;}
+.fixed_social_icons.main_h.sticky {
+    top: 144px !important;
+}
+.fixed_social_icons {
+ background: none repeat scroll 0 0 #fff;
+    box-shadow: 0 0 6px #000;
+    height: auto;
+    left: 0;
+    padding: 20px 5px;
+    position: absolute;
+    top: 350px;
+    width: auto;
+    z-index: 9;
+}
+
+.fixed_social_icons > a {
+    display: block;
+}
+.fixed_social_icons img {margin: 2px 0;}
+/*City Guides CSS*/
+.join_images img{width: 100%; margin-bottom: 20px;}
+.Plages_santa img{height: 221px !important;}
+.santa_manta_img_height img{height: 300px !important;}
+.blog_list_overlay_con2{height: 290px;}
+.Les_Temps_forts_slider{float: left; width: 100%; margin: 10px 0;}
+.carousel-control.right,.carousel-control.left{background-image: none !important;}
+.prev { position: relative; right: -10px; top: 160px;}
+.next { position: relative; left: -10px; top: 160px;}
+.Les_Temps_forts_slider h2{color: #000;
+    font-family: Duffy-DemiBold;
+    font-size: 50px;
+    vertical-align: middle;
+    width: 100%;
+text-align: center; line-height: 90px;}
+.slider_inner_heading h2{color: #FBC200;
+    font-family: Duffy-DemiBold;
+    font-size: 42px;
+    vertical-align: middle;
+    width: 100%;
+text-align: left; line-height: 42px;}
+.slider_back{background: #fff; padding: 20px 0px;}
+.shadow_border img{margin-top: -10px;}
+.Plages_santa{text-align: center;}
+.image_over{position: relative; top: -18px;}
+.image_over span{
+background: #fbc201 none repeat scroll 0 0;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 31px;
+    width: 35px;
+}
+.Infos_Pratiques{background: #fff; padding: 15px 0px;}
+.Infos_Pratiques h2 {
+    font-family: "Duffy-DemiBold";
+    font-size: 42px;
+    line-height: 42px;
+}
+.faq_main2{margin: 20px 0;}
+.weather_section{width: 100%;
+float: left; background: #fbc201; margin-top: 50px; margin-bottom: 10px;}
+.digri_cel{width: 40%; float: left; text-align: center;
+font-size: 55px; color: #fff; font-family: "Duffy-DemiBold"; line-height: 100px; border-right:solid 1px #e9af05; }
+.time_of_sun{width: 60%; float: left; text-align: center;
+font-size: 41px; color: #fff; font-family: "Duffy-DemiBold"; line-height:90px;}
+.time_of_sun span img{position: relative; top: -10px;}
+.join_images {
+background-image: url("../images/join-4-images.png");
+    background-repeat: no-repeat;
+    height: 150px;
+    margin: auto;
+    width: 670px;
+    text-align: center;
+}
+.join_button{
+    margin: 30px auto auto;
+    width: 670px;
+    text-align: center;
+}
+.join_button a{
+ background: #2b180a none repeat scroll 0 0 !important;
+  border: medium none !important;
+    color: #fff !important;
+}
+.join1{width: 106px;
+float: left;
+text-align: center;}
+
+.join2{width: 106px;
+float: left;
+text-align: center;
+position: relative;
+left: 80px; top: 30px;}
+
+.join3{float: left;
+left: 163px;
+position: relative;
+text-align: center;
+width: 106px;}
+
+.join4{float: left;
+    left: 238px;
+    position: relative;
+    text-align: center;
+    top: 30px;
+    width: 115px;}
+.join1 h2, .join2 h2, .join3 h2, .join4 h2{
+  font-family: Duffy-DemiBold;
+  font-size: 37px;
+  color: #fff;
+}
+/*End of City Guides CSS*/
+.col-lg-4.col-md-4.fight_section.main_h.sticky {
+    right: 0;
+    top: 22%;
+}
+.left_section h2 {
+  color: hsl(46, 100%, 49%);
+  font-family: "Duffy-DemiBold";
+  font-size: 40px;
+}
+.Yallow_round{
+    background: #FBC200;
+    width: 100px;
+    margin: 25px auto;
+    height: 100px;
+    clear: both;
+    border-radius: 100px;
+    font-family: Duffy-DemiBold;
+    font-size: 35px;
+    color: #fff;
+    line-height: 25px;
+    padding: 23px 0;
+}
+.partition {
+    
+}
+.partition .colombi_child {
+    border-right: solid 1px #ccc;
+    position: relative;
+    bottom: 0;
+    border-left: solid 1px #ccc;
+}
+.colombi_child a.btn.btn-default {
+    background: #2B180A none repeat scroll 0 0 !important;
+    color: #fff;
+    margin: 15px 0 0 0;
+}
+.carousel-inner{height: auto !important;}
+
+@media (min-width: 1400px){
+.col-lg-4.col-md-4.fight_section.main_h.sticky {
+    right: 0 !important;
+    top: 14% !important;
+}
+}
+.col-lg-12.Infos_Pratiques {float: left; width: 100%;}
+#accordion-6 a {color: hsl(0, 0%, 0%) !important;}
+.node-type-all-travels .travel_listing-inner {box-shadow: 0 3px 6px #a1a1a1; background-color: #fff;}
+.node-type-all-travels .background{background: none !important;}
+.node-type-all-travels .travel_listing-inner img { width: 100% !important; height: 280px;}
+.node-type-all-travels .travel_listing-inner img.img-circle {width: 70% !important;}
+.node-type-all-travels .travel_container1 img{top: -25px !important;}
+.node-type-all-travels .margin_auto.text-center.container {margin: 50px auto;}
+.node-type-all-travels .instagram_bottom_img a img { height: 110px;}
+.book_img{margin-top: 60px;}
+
+@media screen and (max-width:1200px){
+.blog_list_img {height: 400px;}
+.blog_list_overlay_con {height: 400px;}
+.main_yellow_inner.main_h.blog_top-yellow.sticky { margin-top: 72px; z-index: 99;}
+.album_instagram > span{font-size: 18px;}
+.Album_photo h2{font-size: 44px;}
+.blog_hostel-ins .blogvp-instacon1 {
+    background: #fff none repeat scroll 0 0;
+   height: 180px;
+    padding: 20px 0px;
+}
+}
+@media screen and (max-width:1024px){
+    .left_slide, .right_slide{display: none !important;}
+	.node-type-city-guide-articles .main_section .left_section .white_box.img > img{margin-bottom: -60px !important;}
+.col-lg-4.col-md-4.fight_section.main_h.sticky {
+    right: 0 !important;
+    top: 15.4% !important;
+}
+  /* ------- For Tab and Mobile ---------*/
+.node-type-city-guide-articles .main_section > .col-lg-8.col-md-8 {
+    height: 960px;
+    overflow: scroll;
+}
+.node-type-city-guide-articles .main_section > div > .left_section {
+    float: none;
+    margin: 0 auto;
+}
+  .slider_inner_heading h2 { font-size: 26px !important; line-height: 20px !important;}
+  .col-lg-12.Infos_Pratiques { float: left; width: 100%;}
+    .fixed_social_icons{top: 367px;}
+    .fixed_social_icons.main_h.sticky {top: 117px !important; }
+  .ParentDiv{width: 100%;}
+  #Section_1_panel, #Section_2_panel, #Section_3_panel, #Section_4_panel{
+     background-color: rgba(255, 255, 255, 0.85);
+    display: none;
+    height: 412px;
+    margin-bottom: 0;
+    margin-top: -50px;
+    overflow: scroll;
+  }
+    #Section_1_toggle, #Section_2_toggle, #Section_3_toggle, #Section_4_toggle{ margin: 90px auto;}
+  .node-type-your-stay .Section_1,.node-type-your-stay .Section_2,.node-type-your-stay .Section_3,.node-type-your-stay .Section_4{  background-size:100% 600px; background-attachment:inherit !important;}
+}
+
+
+@media screen and (max-width:992px){
+    .node-type-discover-columbia-article .col-lg-4.col-md-4.col-sm-10.col-xs-10.fight_section.main_h {
+    margin: 0 0 0 85px;
+    float: none;
+    width: 86.3%;
+    height: 590px !important;
+}
+    .Album_photo_back img {
+    width: 100%;
+}
+    .colombi_child i {
+    display: block;
+}
+.mobile_img img{width: 100% !important; height: 280px !important;}
+	.col-lg-4.col-md-4.fight_section.main_h.sticky {
+    position: relative !important;
+    z-index: 1;
+}
+  .blog_list_overlay_con2 { height: 180px !important;}
+  .instagram{margin-bottom: 40px !important;}
+  .travel_listing-inner h6{width: 100%;}
+  .your_travel_con .blog_list_space img {height: 170px;}
+  .travel_container1 img{height: 65px !important;}
+.blog_container {padding: 0 15px;}
+.blog_list_img {height: 330px;}
+.blog_list_overlay_con {height:330px;}
+.blog_act_list2 .space1cell {padding: 0 5px;}
+.blog_list_content_in {padding: 5px;}
+.blog_list_content_in .btn-yellow {padding: 4px ;font-size: 12px;}
+.travel_listing-inner h6 {font-size: 14px;padding: 5px;}
+.blog_list_space {width: 31.3% !important;}
+.space-15 {margin: 0 3%;}
+.travel_container1 img {border: 3px solid #fff;left: 24%;top: -13px;width: 65px;}
+.album_instagram > span{font-size: 13px;}
+.Album_photo h2{font-size: 44px;}
+}
+#yallo_mobile_toggle{display: none;}
+#yallo_mobile_pannel{
+    display: block;
+}
+
+.node-type-discover-columbia-article .left_section {
+    background: hsl(0, 0%, 100%) none repeat scroll 0 0;
+}
+.node-type-discover-columbia-article .left_section 
+
+@media screen and (max-width:768px){
+    .travel_container1 img { height: 53px !important;}
+    .node-type-all-travels .travel_listing-inner img { width: 100% !important; height: 140px;}
+.node-type-all-travels .instagram_bottom_img a img { height: 70px;}
+
+    .Voyage_top_name {
+    margin-top: 53px;
+    float: none;
+    clear: both;
+    display: block;
+}
+    .col-item a img{height: 200px;}
+    .node-type-discover-columbia-article .left_section {
+    background: hsl(0, 0%, 100%) none repeat scroll 0 0;
+    float: left;
+    margin-left: 3px;
+    width: 99%;
+}
+.node-type-discover-columbia-article .left_section{margin-bottom: 35px;}
+.node-type-city-guide-articles .main_section > .col-lg-4.col-md-4.fight_section {width: 100%;}
+.node-type-city-guide-articles .main_section > .col-lg-4.col-md-4.fight_section > .col-lg-10.col-md-10 { margin: 0 auto; width: 60%;}
+.Plages_santa img{height: 150px !important;}
+.santa_manta_img_height img{height: 200px !important;}
+  .Midle_slider img{width:100%; height: 200px !important;}
+  .fixed_social_icons span{font-size: 8px;}
+  .fixed_social_icons img{ width: 20px;}
+  .node-type-city-guide .fixed_social_icons { top: 570px;}
+.prev { right: 0 !important;}
+.next { left: 0 !important;}
+  .container{width: 100% !important;}
+  .slider_inner_heading h2 { font-size: 26px !important; line-height: 20px !important;}
+  .fixed_social_icons{ top: 285px;}
+  .fixed_social_icons.main_h.sticky { top: 118px !important;}
+.node_insta .imgfull-width {
+    height: 240px;}
+    .blog_hostel-ins .blogvp-instacon1 {
+    background: #fff none repeat scroll 0 0;
+   height: 151px;
+    padding: 20px 0px;
+}
+.album_instagram{margin-bottom: 13px;}
+.album_instagram > span{font-size: 13px;}
+}
+
+.mobile_yallow_strip{display: none;}
+.mobile_second_nav{display: none;}
+h6.current-page-title1 {display: none !important;}
+
+.col-lg-4.col-md-4.fight_section.main_h.withFooter {
+   bottom: 0 !important;
+    position: absolute !important;
+    right: 0 !important;
+    z-index: 9 !important;
+    height: auto !important;
+}
+.withFooter .right_inner {
+    bottom: 0;
+    position: absolute;
+}
+
+.book_image{margin-top: 50px;}
+@media screen and (max-width:767px){
+    .Voyage {
+    margin-top: 50px;
+    text-align: center;
+}
+.Voyage img{float: none;}
+.Voyage_top_name{margin-top: 0px;}
+.main_head.main_h.sticky .rev-brand.deskt_hidden { display: none;}
+.main_head.main_h .current-page-title1 { display: none !important;}
+.main_head.main_h.sticky .current-page-title1 { display: block !important;}
+
+h6.current-page-title1 {
+    font-size: 30px;
+    line-height: 35px;
+    max-width: 100% !important;
+    width: 100% !important;
+    padding-top: 17px;
+    display: block !important;
+}
+
+
+
+
+	.mobile_yallow_strip .y_inner-topul.text-center li {
+    border-bottom: 1px solid #FCE047;
+    text-align: left;}
+	.mobile_yallow_strip .y_inner-topul.text-center a {
+    font-family: 'Duffy-DemiBold';
+    font-size: 25px;
+    line-height: 40px;
+}
+.main_head.main_h.sticky {background: hsl(46, 99%, 49%) none repeat scroll 0 0;}
+.main_h.sticky .mobile_second_nav > button {
+    background: hsla(0, 0%, 0%, 0) none repeat scroll 0 0;
+    border: medium none;
+   }
+.main_h.sticky .mobile_second_nav { 
+display: block;
+    float: right;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    position: relative;
+    right: 12px;
+}
+.main_h.sticky .reserver_con{display: none;}
+.mobile_second_nav{display: none;}
+.mobile_yallow_strip{
+  background: hsl(46, 99%, 49%) none repeat scroll 0 0 !important;
+  border: medium none !important;
+  float: left;
+  position: absolute;
+  top: 65px;
+}
+	.res_heading h2{font-size: 36px;}
+    /* ------- For Tab and Mobile ---------*/
+.node-type-city-guide-articles .main_section > .col-lg-8.col-md-8 {
+    height: 960px;
+    overflow: scroll;
+}
+.node-type-city-guide-articles .main_section > .col-lg-4.col-md-4.fight_section {
+    width: 100%;
+    background: none !important;
+}
+.node-type-city-guide-articles .main_section > .col-lg-4.col-md-4.fight_section > .col-lg-10.col-md-10 {
+    margin: 0 auto;
+    width: 100%;
+}
+.node-type-city-guide-articles .main_section > div > .left_section {
+    float: none;
+    margin: 0 auto;
+}
+.node-type-city-guide-articles .main_section .res_heading > h2 {
+    line-height: 70px;
+}
+.node-type-city-guide-articles .main_section .left_section .white_box.img > img {
+    margin-bottom: -57px !important;
+}
+  .time_of_sun { font-size: 36px !important; width: 100% !important;}
+  .digri_cel { font-size: 40px !important; width: 100% !important;}
+.join3 {
+    border-left: 1px solid #A07C01;
+    border-right: 1px solid #A07C01;
+  }
+  .join2{border-left: 1px solid #A07C01;}
+
+
+  .join_button{width: 100% !important;}
+.join_images {
+    background-image:none !important;
+    background-color: #ccc;
+    height: 117px !important;
+    width: 100% !important;
+}
+.join1, .join2, .join3, .join4 {
+    width: 25% !important;
+    background-color: #FBC201;
+    height: 100%;
+    top: 0 !important;
+    left:0 !important;
+  }
+
+
+
+.fixed_social_icons {padding: 15px 0px;}
+.fixed_social_icons img {width: 20px;  margin-left: 5px;  margin-right: 5px;}
+  .blog_hostel-ins .blogvp-instacon1{background: #fff none repeat scroll 0 0;
+    float: left;
+    height: 180px;
+    padding: 20px 0;
+    width: 100%;}
+    .node_insta .imgfull-width {
+    height: 100%;
+}
+  .Section_panel_midle_div{width: 90%;}
+  .Section_1, .Section_2, .Section_3, .Section_4{ margin-top: 0 !important;}
+  #Section_1_toggle, #Section_2_toggle, #Section_3_toggle, #Section_4_toggle{width: 100%;font-size: 20px; position: relative;}
+  .form-group{margin-bottom: 0 !important;}
+  .trip_travel_inner .home_trip_asdvisor{margin: 14px 0 10px 0px;}
+  .mobile_yallow_strip { background: #fff none repeat scroll 0 0; clear: both; border-top: 1px solid hsl(0, 0%, 80%);}
+  .mobile_yallow_strip ul li a:hover{color: #fff !important; }
+  .mobile_yallow_strip ul li a.active { color: #000 !important;}
+  .main_yellow_inner{display: none;}
+.mobile_flag_icon{ box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2); float: left; width: 100%;  padding-left: 8px !important;}
+.mobile_flag_icon > li { float: left;}
+.mobile_border{border-left: solid 1px #ccc; border-right: solid 1px #ccc;}
+.mobile_flag_icon > li a:hover{color: #ccc !important;}
+
+
+  #yallo_mobile_toggle{
+	color: #000;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px !important;
+	}
+	#yallo_mobile_pannel{display: none;}
+	.y_inner-topul.text-center {  display: block !important;  padding: 0 0 20px !important;}
+	.y_inner-topul li{width: 100%; padding-left: 15px;}
+	.main_yellow_inner.main_h.blog_top-yellow.sticky { margin-top: 50px; z-index: 99;}
+	.y_inner-topul.text-center{display: block !important; padding: 12px;}
+	.travel_container1 img {
+		height: 100px !important;
+    top: -22px;
+    width: 100px;}
+  .sticky .mobile_logo{margin-left: 70px !important;}
+	.nav.navbar-nav {
+    position: relative;
+    top: -1px;
+}
+.navbar-nav li.no_bdr{padding-right: 0px;}
+	ul.top_links{ position: relative; top: 0px;}
+	.left_exp{display: none;}
+	
+.navbar-toggle .main_h .sticky{top: 0 !important;}
+#menu{display: block;}
+div#overlay { display: none; }
+.mobile_logo{margin-left: 0px !important;}
+button#toggle {
+display: none;
+    height: 40px;
+    left: 10px;
+    position: relative;
+    text-align: center;
+    top: 5px;
+    transition: all 0.3s ease-out 0s;
+    width: 40px;
+    z-index: 9999;
+}
+
+button#toggle i {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#main#content { padding: 0px; }
+
+#menu {
+  text-align: center;
+  transition: all ease-out 0.3s;
+}
+
+#menu a { color: white; }
+
+#menu ul {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(22,160,133, 0.8);
+}
+
+#menu ul li {
+  display: inline-block;
+  position: relative;
+}
+
+#menu ul li > a {
+  display: inline-block;
+  padding: 10px;
+}
+
+#menu ul li > a > i {
+  margin-left: 15px;
+  transition: all ease-out 0.3s;
+  -webkit-transition: all ease-out 0.1s;
+}
+
+#menu ul li ul {
+  display: none;
+  position: absolute;
+  top: 38px;
+  width: 200px;
+  text-align: left;
+}
+
+#menu ul li ul li { display: block; }
+
+#menu ul li ul li a { display: block; }
+
+#menu ul li:hover > a { background-color: rgba(0, 0, 0, 0.3); }
+
+#menu ul li:hover > a > i { transform: rotateZ(90deg); }
+
+#menu ul li:hover ul { display: block; }
+
+@media screen and (max-width: 767px) {
+button#toggle { display: block; }
+
+#main#content {
+  transition: all ease-out 0.4s;
+}
+
+#menu {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  background-color:#fff;
+  margin-left: -250px;
+}
+
+#menu ul {
+  text-align: left;
+  background-color: transparent;
+}
+
+#menu ul li { display: block; }
+
+#menu ul li a { display: block; color: #000; }
+
+#menu ul li a > i { float: right; }
+
+#menu ul li ul {
+  display: none;
+  position: static;
+  width: 100%;
+  background-color: rgba(22,160,133, 0.2);
+}
+
+#menu ul li:hover > ul { display: none; }
+
+#menu ul li:hover > a > i { transform: rotateZ(0); }
+
+#menu ul li.open > a { background-color: rgba(0, 0, 0, 0.3); }
+
+#menu ul li.open > a > i { transform: rotateZ(90deg); }
+
+#menu ul li.open > ul { display: block; }
+
+div#overlay {
+  display: block;
+  visibility: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100% !important;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all ease-out 0.3s;
+  z-index: 1;
+  opacity: 0;
+}
+
+html.open-menu { overflow: hidden; }
+
+html.open-menu div#overlay {
+  visibility: visible;
+  opacity: 1;
+  width:-150%;
+  left: 250px;
+}
+
+html.open-menu button#toggle,
+ html.open-menu #main#content { left: 245px;  background-color: #fff;}
+
+html.open-menu nav#menu {
+  z-index: 9999999;
+  left: 250px;
+}
+}
+
+
+.navbar-nav {
+    background: #fff none repeat scroll 0 0;
+    left: 0;
+    margin: 0 !important;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    border-top: solid 1px #ccc;
+}
+	.top_links li { display: block !important;}
+.accordion-section {padding: 10px 0;}
+.blog_list_img {height: 400px;}
+.blog_list_overlay_con {height: 400px;}
+.blog_list_space {width: 100% !important;padding: 15px 0;margin: 10px 0;}
+.space-15 {margin: 0;}
+}
+.only_mobile_show{display: none;}
+.footer_head .footer_slide_titlwe{width: 75%; float: left;}
+.left_section .comments {
+    clear: both;
+    padding: 0 15px;
+    width: 100%;
+    position: relative;
+    min-height: 100px;
+}
+.left_section .comments .title {
+    border-radius: 4px;
+    float: left;
+    margin-top: 31px;
+    padding-left: 11px;
+    width: 70%;
+    margin-bottom: 40px;
+}
+.left_section .comments .form-text {
+    float: left;
+    width: 100%;
+}
+.left_section .comments .commenter-name {
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.left_section .comments .comment-time {
+    color: hsl(0, 0%, 56%);
+    float: right;
+    font-size: 11px;
+}
+.left_section .comments .comment-permalink{display: none;}
+.left_section .comments .comment-text > h3 {
+    display: none;
+}
+.left_section .comments .content {
+    float: left;
+    font-size: 13px;
+    width: 100%;
+}
+.left_section .comments .links.inline {
+    float: right;
+    margin-top: 20px;
+}
+.left_section .comments .links.inline li a {
+    color: hsl(0, 0%, 40%);
+    text-transform: capitalize;
+}
+.left_section .comments .links.inline .comment-reply a {
+    background-image: url("../images/reply-icon.png");
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    background-size: 18% auto;
+    display: inline-block;
+    text-align: right;
+    width: 57px;
+}
+.left_section .comments .comment.comment-by-node-author.clearfix {
+    border-bottom: 1px solid hsl(0, 0%, 80%);
+    float: left;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.right_inner h5 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.node-type-discover-columbia-article .blog_list_overlay_con{height: 251px;}
+.node-type-discover-columbia-article .left_section img{width: 100% !important; height: 100% !important;}
+.node-type-discover-columbia-article .left_section .Section_light_img img { width: auto; height: auto; }
+form#comment-form {
+    display: none;
+    float: left;
+    width: 100%;
+}
+input#edit-preview {
+    display: none;
+}
+.indented .comment.comment-by-node-author.clearfix {
+    background: #EAEAEA;
+    padding: 12px 10px;
+}
+h2.title.comment-form {
+    display: none;
+}
+.indented .comment.comment-by-node-author.clearfix ul.links.inline {
+    display: none;
+}
+.node-type-discover-columbia-article .left_section .Section_light_img {
+    box-shadow: none;
+    position: relative;
+}
+a#writeComment {
+    background: #2B180A none repeat scroll 0 0 !important;
+    border: medium none !important;
+    color: #FFF !important;
+    font-family: ProximaNova-Bold !important;
+    font-size: 14px !important;
+    padding: 10px 15px !important;
+    text-transform: uppercase !important;
+    border-radius: 3px;
+    position: relative;
+    float: right;
+    top: 42px;
+}
+#edit-actions input#edit-submit {
+    background: #2B180A none repeat scroll 0 0 !important;
+    border: medium none !important;
+    color: #FFF !important;
+    font-family: ProximaNova-Bold !important;
+    font-size: 12px !important;
+    padding: 5px 20px !important;
+    text-transform: uppercase !important;
+    border-radius: 3px;
+}
+h3.bon {
+    color: hsl(25, 62%, 10%);
+    font-family: "Duffy-DemiBold";
+    font-size: 35px;
+    text-align: center;
+}
+
+.node-type-discover-columbia-article .left_section .Section_light_img span > img {
+    width: 100%;
+}
+
+@media screen and (max-width:600px){
+    .node-type-discover-columbia-article .col-lg-4.col-md-4.col-sm-10.col-xs-10.fight_section.main_h {
+    margin: 0 0 0 31px;
+    float: none;
+    width: 88.3%;
+    height: 590px !important;
+}
+.node-type-discover-columbia-article .left_section {
+    background: hsl(0, 0%, 100%) none repeat scroll 0 0;
+    width: 93%;
+    float: left;
+    margin-left: 17px;
+}
+    .col-item a img{height: 180px;}
+    .partition .colombi_child{border: none !important;}
+	.left_section .comments .title{width: auto;}
+	.mobile_logo {
+    margin-left: 0 !important;
+}
+  .node-type-city-guide .fixed_social_icons{ top: 66px;}
+.prev { right: 0 !important; top: 150px;}
+.next { left: 0 !important; top: 150px;}
+  .album_instagram > span{font-size: 13px;}
+.album_instagram > i{ font-size: 15px;}
+  .only_mobile_show button { position: relative; top: 9px;}
+  .only_mobile_show li { float: left !important; width: 100% !important; padding: 8px 0px !important;}
+  .only_mobile_show button a { color: #000; margin-bottom: 2px; float: left; width: 28px;}
+  .only_mobile_show ul { left: 0px; top: 34px;}
+  .only_mobile_show{display: block; float: left;
+    width: 57px;}
+  .Section_light_img img{float: none;}
+  .panel_left_contant h2{font-size: 23px;}
+  .fixed_social_icons.main_h.sticky {top: 49px !important;}
+  .down_arrow.last_arrow {top: 60px;}
+  .node-type-your-stay .Section_1, .node-type-your-stay .Section_2, .node-type-your-stay .Section_3, .node-type-your-stay .Section_4{  background-size: 100% 446px;}
+  #Section_1_panel a{font-size: 12px;}
+    #Section_1_panel, #Section_2_panel, #Section_3_panel, #Section_4_panel{ background-color: rgba(255, 255, 255, 0.85);
+    display: none;
+    height: 300px;
+    margin-bottom: 0;
+    margin-top: 0px;
+    overflow: scroll;}
+    #Section_1_toggle, #Section_2_toggle, #Section_3_toggle, #Section_4_toggle{ margin: 40px auto;}
+  .fixed_social_icons{top: 66px;}
+  .fixed_social_icons span{font-size: 8px;}
+	.socail12 > h2{display: none !important;}
+	.blog_act_list2 .space1cell {padding: 6px 5px;}
+	.blog_list-inner{padding-bottom: 5px;}
+.blog_list_img {height: 340px;}
+.blog_list_overlay_con {height: 340px;}
+
+}
+@media screen and (max-width:480px){
+    .node-type-city-guide-articles .fight_section.main_h .col-lg-10.col-md-12.right_inner {
+    height: 570px;
+    overflow-y: scroll;
+    padding-right: 4%;
+    width: 80%;
+    background: #fff;
+    margin-left: 29px;
+}
+    .node-type-discover-columbia-article .col-lg-4.col-md-4.col-sm-10.col-xs-10.fight_section.main_h {
+    margin: 0 0 0 31px;
+    float: none;
+    width: 85.3%;
+    height: 590px !important;
+}
+	a#writeComment {
+    background: #2B180A none repeat scroll 0 0 !important;
+    border: medium none !important;
+    color: #FFF !important;
+    font-family: ProximaNova-Bold !important;
+    font-size: 10px !important;
+    padding: 5px 6px !important;
+    text-transform: uppercase !important;
+    border-radius: 3px;
+    position: relative;
+    float: right;
+    top: 46px;
+}
+.travel_container1 img {
+    height: 80px !important;
+    top: -11px;
+    width: 80px;
+}
+.blog_list_img {height: 250px;}
+.blog_list_overlay_con {height: 250px;}
+.blog_list_inner .h2_seo_trip {width: 90%;padding: 7px 8px;}
+}
+
+
+.node-type-discover-columbia-article .col-lg-4.col-md-4.fight_section.main_h {
+  overflow: hidden;
+  z-index: 0;
+}
+.node-type-discover-columbia-article .fight_section.main_h .col-lg-10.col-md-12.right_inner {
+    height: 570px;
+    overflow-y: scroll;
+    padding-right: 12%;
+    width: 108%;
+}
+@media screen and (max-width: 385px){
+.res_heading h2 {
+    font-size: 36px;
+    line-height: 40px;
+}
+
+}
+/*======= Start Vos page css ============*/
+.margin_auto{margin: auto; float: none;}
+.Items_background_image {
+    float: left;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+}
+.background{background: #fff;}
+.Blog_hostel_instagram{float: left; width: 100%; margin-top: 50px; margin-bottom: 70px;}
+/*======= end Vos page css ============*/
+.comment.clearfix {
+  clear: both;
+}

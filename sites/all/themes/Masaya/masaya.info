@@ -1,0 +1,54 @@
+name = Masaya
+description = A flexible, recolorable theme with many regions.
+package = Core
+version = VERSION
+core = 7.x
+
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/Blog.css
+stylesheets[all][] = css/bootstrap.css
+stylesheets[all][] = css/bootstrap-select.min.css
+stylesheets[all][] = css/bootstrap-datetimepicker.css
+stylesheets[all][] = css/jquery.sidr.light.css
+
+scripts[] = js/browser.js
+scripts[] = js/Moment.js
+scripts[] = js/bootstrap.min.js
+scripts[] = js/bootstrap-select.js
+scripts[] = js/jquery.easytabs.js
+scripts[] = js/common.js
+scripts[] = js/jquery.hashchange.min.js
+scripts[] = js/jquery.selectbox-0.2.js
+scripts[] = Blog_js/accordion.js
+scripts[] = js/bootstrap-datetimepicker.min.js
+scripts[] = js/jquery.parallax-scroll.js
+scripts[] = js/jquery.sidr.min.js
+
+
+regions[header] = Header
+regions[help] = Help
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+regions[highlighted] = Highlighted
+
+regions[featured] = Featured
+regions[content] = Content
+regions[sidebar_first] = Sidebar first
+regions[sidebar_second] = Sidebar second
+
+
+regions[footer_social_icon] = Footer Social Icon
+regions[footer_firstcolumn] = Footer first column
+regions[footer_secondcolumn] = Footer second column
+regions[footer_thirdcolumn] = Footer third column
+regions[footer_fourthcolumn] = Footer fourth column
+regions[footer] = Footer
+
+settings[shortcut_module_link] = 0
+
+
+; Information added by Drupal.org packaging script on 2015-04-02
+version = "7.36"
+project = "drupal"
+datestamp = "1427943826"
+

@@ -1,0 +1,339 @@
+<?php
+function masaya_init() {
+  global $base_url;
+  drupal_add_js(array('masaya' => array('sitepath' => $base_url)), 'setting');
+  drupal_add_js($base_url.'/'.drupal_get_path('module', 'masaya').'/masaya.js');
+  drupal_add_js('http://maps.google.com/maps/api/js?sensor=false', array('type'=>'external'));
+  drupal_add_js('https://apis.google.com/js/platform.js', array('type'=>'external'));
+  $device = getDevice();
+  if(($device == 'tablet') || ($device == 'mobile')) {
+    drupal_add_js("(function($){
+      $(document).ready(function(){
+        window.setArrivalTime = function (e){
+            $('#arrival_date').val(e.date.format('MM/DD/YYYY'));
+            $('#span_arrival_date').text(e.date.format('MM/DD/YYYY'));
+            $('#list_span_arrival_date').text(e.date.format('MM/DD/YYYY'));
+            $('#list_arrival_date').text(e.date.format('MM/DD/YYYY'));
+            var dateSelected = $('#arrival_date').val();
+            var dateArray = dateSelected.split('/');
+            var date = dateArray[1];
+            var month = dateArray[0];
+            var year = dateArray[2];
+            $('#checkin_monthday').val(date);
+            $('#checkin_year_month').val(year+'-'+month);
+        }
+        window.setDepartureTime = function (e){
+            $('#departure_date').val(e.date.format('MM/DD/YYYY'));
+            $('#span_departure_date').text(e.date.format('MM/DD/YYYY'));
+            $('#list_departure_date').text(e.date.format('MM/DD/YYYY'));
+            $('#list_span_departure_date').text(e.date.format('MM/DD/YYYY'));
+            var dateSelected = $('#departure_date').val();
+            var dateArray = dateSelected.split('/');
+            var date = dateArray[1];
+            var month = dateArray[0];
+            var year = dateArray[2];
+            $('#checkout_monthday').val(date);
+            $('#checkout_year_month').val(year+'-'+month);
+        }
+      });
+    })(jQuery);", array('type'=>'inline', 'scope'=>'footer'));
+  }
+  else {
+    drupal_add_js("(function($){
+      $(document).ready(function(){      
+        window.setArrivalTime = function (e){
+          $('#arrival_date').val(e.date.format('MM/DD/YYYY'));
+          var dateSelected = $('#arrival_date').val();
+          var dateArray = dateSelected.split('/');
+          var date = dateArray[1];
+          var month = dateArray[0];
+          var year = dateArray[2];
+          $('#checkin_monthday').val(date);
+          $('#checkin_year_month').val(year+'-'+month);
+        }
+        window.setDepartureTime = function (e){
+          $('#departure_date').val(e.date.format('MM/DD/YYYY'));
+          var dateSelected = $('#departure_date').val();
+          var dateArray = dateSelected.split('/');
+          var date = dateArray[1];
+          var month = dateArray[0];
+          var year = dateArray[2];
+          $('#checkout_monthday').val(date);
+          $('#checkout_year_month').val(year+'-'+month);
+        }
+      });
+    })(jQuery);", array('type'=>'inline', 'scope'=>'footer'));
+  }
+  drupal_add_js('jQuery(document).ready(function(){
+    //alert(\'working\');
+    if (window.location.hash) {
+      //alert(\'working\');
+        var hash = window.location.hash;
+        jQuery(\'a[href="\'+hash+\'"]\').trigger(\'click\');
+        jQuery(\'a[href="\'+hash+\'"]\').trigger(\'click\');
+    }
+  });', array('type'=>'inline', 'scope'=>'footer'));
+}
+
+function masaya_menu()
+{
+  $items = array();
+  $items['admin/config/masaya'] = array(
+      'title' => 'Masaya module settings',
+      'description' => 'Configure the Masaya module',
+      'page callback' => 'drupal_get_form',
+      'page arguments' => array('masaya_admin'),
+      'access arguments' => array('access administration pages'),
+      'type' => MENU_NORMAL_ITEM,
+  );
+  $items['sendEmail'] = array(
+      'title' => t('Email'),
+      'description' => 'Send mail',
+      'page callback' => 'email_after_submission',
+      'access arguments' => array('access content'), 
+      'type' => MENU_CALLBACK,
+  );
+  $items['getNextScroll'] = array(
+      'title' => t('Get Next Scroll'),
+      'description' => 'Get Next Scroll',
+      'page callback' => 'getNextScroll',
+      'access arguments' => array('access content'), 
+      'type' => MENU_CALLBACK,
+  );
+  return $items;
+}
+function getNextScroll() {
+  if (isset($_REQUEST['page']) && !empty($_REQUEST['page'])) 
+  {
+    $Instagram_ID = "510627558";
+    $Instagram_Token = "510627558.98ec466.00e08393fe294c9aa6e2470c7f735acb";
+
+    $url = urldecode($_REQUEST['page']);
+
+    $chI = curl_init();
+    curl_setopt($chI, CURLOPT_URL, $url);
+    curl_setopt($chI, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($chI, CURLOPT_TIMEOUT, 0);
+    curl_setopt($chI, CURLOPT_SSL_VERIFYHOST, 0);
+    curl_setopt($chI, CURLOPT_SSL_VERIFYPEER, 0);
+    $result = curl_exec($chI);
+    curl_close($chI);
+
+    $objectI = json_decode($result);
+    $arrayI  = object2array($objectI);
+
+    $result = '<div data-next-url="'.$arrayI['pagination']['next_url'].'" class="col-lg-12 padding_none instgram-data-holder">
+              <div class="col-lg-6 col-sm-6 padding_none img">
+                <a href="'.$arrayI['data'][0]['link'].'"><img src="'.$arrayI['data'][0]['images']['standard_resolution']['url'].'"></a>
+              </div>
+              <div class="col-lg-6 col-sm-6 padding_none">
+                <div class="col-lg-6 col-sm-6 col-xs-6 padding_none img">
+                  <a href="'.$arrayI['data'][1]['link'].'"><img src="'.$arrayI['data'][1]['images']['low_resolution']['url'].'"></a>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-xs-6 padding_none img">
+                  <a href="'.$arrayI['data'][2]['link'].'"><img src="'.$arrayI['data'][2]['images']['low_resolution']['url'].'"></a>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-xs-6 padding_none img">
+                  <a href="'.$arrayI['data'][3]['link'].'"><img src="'.$arrayI['data'][3]['images']['low_resolution']['url'].'"></a>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-xs-6 padding_none img">
+                  <a href="'.$arrayI['data'][4]['link'].'"><img src="'.$arrayI['data'][4]['images']['low_resolution']['url'].'"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12 padding_none">
+              <div class="col-lg-3 col-sm-3 col-xs-6 padding_none img">
+                <a href="'.$arrayI['data'][5]['link'].'"><img src="'.$arrayI['data'][5]['images']['low_resolution']['url'].'"></a>
+              </div>
+              <div class="col-lg-3 col-sm-3 col-xs-6 padding_none img">
+                <a href="'.$arrayI['data'][6]['link'].'"><img src="'.$arrayI['data'][6]['images']['low_resolution']['url'].'"></a>
+              </div>
+              <div class="col-lg-3 col-sm-3 col-xs-6 padding_none img">
+                <a href="'.$arrayI['data'][7]['link'].'"><img src="'.$arrayI['data'][7]['images']['low_resolution']['url'].'"></a>
+              </div>
+              <div class="col-lg-3 col-sm-3 col-xs-6 padding_none img">
+                <a href="'.$arrayI['data'][8]['link'].'"><img src="'.$arrayI['data'][8]['images']['low_resolution']['url'].'"></a>
+              </div>
+            </div>
+
+            <div class="col-lg-12 padding_none">
+              <div class="col-lg-6 col-sm-6 padding_none">
+                <div class="col-lg-6 col-sm-6 col-xs-6 padding_none img">
+                  <a href="'.$arrayI['data'][9]['link'].'"><img src="'.$arrayI['data'][9]['images']['low_resolution']['url'].'"></a>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-xs-6 padding_none img">
+                  <a href="'.$arrayI['data'][10]['link'].'"><img src="'.$arrayI['data'][10]['images']['low_resolution']['url'].'"></a>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-xs-6 padding_none img">
+                  <a href="'.$arrayI['data'][11]['link'].'"><img src="'.$arrayI['data'][11]['images']['low_resolution']['url'].'"></a>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-xs-6 padding_none img">
+                  <a href="'.$arrayI['data'][12]['link'].'"><img src="'.$arrayI['data'][12]['images']['low_resolution']['url'].'"></a>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-sm-6 padding_none img">
+                <a href="'.$arrayI['data'][13]['link'].'"><img src="'.$arrayI['data'][13]['images']['standard_resolution']['url'].'"></a>
+              </div>
+            </div>';
+    return drupal_json_output(array('data'=>$result));
+  }
+  else
+    return drupal_json_output(array('data'=>'<span style="text-align:center;width:100%;display:none;">No more images!</span>'));
+}
+function email_after_submission () {
+  $message = 'Empty Form';
+
+  if (isset($_REQUEST['firstname']) && isset($_REQUEST['lastname']) && isset($_REQUEST['message']) && isset($_REQUEST['email']) && isset($_REQUEST['hostel']) && isset($_REQUEST['object'])) {
+    
+    $message = '<strong>Name : </strong>'.$_REQUEST['firstname'].' '.$_REQUEST['lastname'].'<br/>
+                <strong>Email : </strong>'.$_REQUEST['email'].'<br/>
+                <strong>Object : </strong>'.$_REQUEST['object'].'<br/>
+                <strong>Hostel : </strong>'.$_REQUEST['hostel'].'<br/>
+                <br/><br/>
+                <strong>Message : </strong>'.$_REQUEST['message'].'<br/>';
+  }
+
+  $subject = variable_get('masaya_email_subject');
+  $from = variable_get('site_mail', '');    
+  $send_to = variable_get('to_email');
+  $params = array(
+                 'message_body' => $message,
+                 'subject' => $subject,
+            );
+  
+  //drupal_mail($module, $key, $email, $language, $params, $from, $send);
+  drupal_mail('masaya', 'contact', $send_to, language_default(), $params, $from);
+  return true;
+}
+function masaya_mail($key, &$message, $params)
+{
+  switch ($key)
+  {
+    case 'contact':
+          $message['subject'] = $params['subject'];
+          $message['body'][] = $params['message_body'];
+          $message['headers']['Content-Type'] = 'text/html; charset=UTF-8; format=flowed';
+    break;
+  }
+}
+function masaya_admin() {
+  $form = array();
+  $subject = variable_get('masaya_email_subject');
+  $to_email = variable_get('to_email');
+  $form['masaya_email_subject'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Contact E-Mail Subject'),
+    '#default_value' => $subject,
+    '#description' => t("The email subject for contact email."),
+    '#required' => TRUE,
+  );
+  $form['to_email'] = array(
+    '#type' => 'textfield',
+    '#title' => t('To Email'),
+    '#default_value' => $to_email,
+    '#description' => t("The email subject for contact email."),
+    '#required' => TRUE,
+  );
+  $form['voyage_de_label'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Voyage De Field Label'),
+    '#default_value' => variable_get('voyage_de_label'),
+    '#description' => t("The English Label for Voyage De Field on frontpage."),
+    '#required' => TRUE,
+  );
+  $form['period_label'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Period Field Label'),
+    '#default_value' => variable_get('period_label'),
+    '#description' => t("The English Label for Period Field on frontpage."),
+    '#required' => TRUE,
+  );
+  return system_settings_form($form);
+}
+function translation_node_get( $node_id )
+{
+    if ( is_numeric($node_id) && $node_id > 0 )
+    {
+        // Get current language code
+        global $language;
+        $lang_code = $language->language;
+
+        // Get translation node id
+        $base_node = node_load( $node_id );
+        $tnid = $base_node->tnid;
+
+        // Search the database for the translated node of the current language
+        $result = db_select('node', 'n')
+        ->fields('n', array('nid', 'type', 'uid', 'status', 'title', 'language'))
+        ->condition('n.tnid', $tnid)
+        ->condition('n.language', $lang_code)
+        ->addTag('node_access')
+        ->execute();
+
+        foreach ( $result as $trans_node )
+        {
+            // Return the correct language node
+            return node_load( $trans_node->nid );
+        }
+    }
+
+    // No translation node found!
+    return false;
+}
+function translation_node_get_from_lang ( $node_id, $lang_code )
+{
+    if ( is_numeric($node_id) && $node_id > 0 )
+    {
+        // Get current language code
+        //global $language;
+        //$lang_code = $language->language;
+
+        // Get translation node id
+        $base_node = node_load( $node_id );
+        $tnid = $base_node->tnid;
+
+        // Search the database for the translated node of the current language
+        $result = db_select('node', 'n')
+        ->fields('n', array('nid', 'type', 'uid', 'status', 'title', 'language'))
+        ->condition('n.tnid', $tnid)
+        ->condition('n.language', $lang_code)
+        ->addTag('node_access')
+        ->execute();
+
+        foreach ( $result as $trans_node )
+        {
+            // Return the correct language node
+            return $trans_node->nid;
+        }
+    }
+
+    // No translation node found!
+    return false;
+}
+function getDevice(){
+  require_once('MobileDetect.php');
+  $detect = new Mobile_Detect;
+  $deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'mobile') : 'desktop');
+  return $deviceType;
+}
+function object2array($object){
+  $return = NULL;
+  if(is_array($object))
+  {
+      foreach($object as $key => $value)
+      $return[$key] = object2array($value);
+  }
+  else
+  {
+      $var = @get_object_vars($object);
+      if($var)
+      {
+          foreach($var as $key => $value)
+          $return[$key] = ($key && !$value) ? NULL : object2array($value);
+      }
+      else return $object;
+  }
+  return $return;
+}
